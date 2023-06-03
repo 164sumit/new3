@@ -51,8 +51,8 @@ export const productReducer = createReducer(initialState, {
 
     },
     ALL_PRODUCT_SUCCESS: (state, action) => {
-        state.loading = false,
-            state.products = action.payload.products;
+        state.loading = false;
+        state.products = action.payload.products;
         state.productsCount = action.payload.productsCount;
         state.resultPerPage = action.payload.resultPerPage;
         state.filteredProductsCount = action.payload.filteredProductsCount;
