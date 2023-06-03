@@ -214,7 +214,7 @@ export default function PrimarySearchAppBar() {
         >
           {isAuthentication?<img
                   style={{borderRadius:"100%",height:"40px",width:"40px"}}
-                  src={user.avatar.url}
+                  src={user?user.avatar.url:null}
                   alt="Avatar"
                   // className={styles.avatarImage}
                 />:<AccountCircle />}
@@ -341,7 +341,7 @@ export default function PrimarySearchAppBar() {
               {/* <AccountCircle /> */}
               {isAuthentication?<img
                   style={{borderRadius:"100%",height:"40px",width:"40px"}}
-                  src={user.avatar.url}
+                  src={user?user.avatar.url:null}
                   alt="Avatar"
                   // className={styles.avatarImage}
                 />:<AccountCircle />}
