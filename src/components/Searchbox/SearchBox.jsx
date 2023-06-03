@@ -28,11 +28,11 @@ const SearchBox = () => {
   //   // }
   // };
 
-  const handleKeyPress = (e) => {
-    if (e.key === 'Enter') {
-      setWord(searchText);
-    }
-  };
+  // const handleKeyPress = (e) => {
+  //   if (e.key === 'Enter') {
+  //     setWord(searchText);
+  //   }
+  // };
 
   return (
       <form onSubmit={handleSearch}>
