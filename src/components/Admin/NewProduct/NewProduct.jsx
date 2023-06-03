@@ -15,8 +15,7 @@ import DialpadIcon from '@mui/icons-material/Dialpad';
 import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import Button from '@mui/material/Button';
 import Loader from '../../layout/Loader/Loader'
-import Alert from '@mui/material/Alert'
-import AlertTitle from '@mui/material/AlertTitle';
+
 // import {toast} from "react-toastify"
 function NewProduct() {
     const dispatch = useDispatch();
@@ -30,7 +29,7 @@ function NewProduct() {
     const [description, setDescription] = useState("");
     const [category, setCategory] = useState("");
     const [mobile, setmobille] = useState(0);
-    const [merror, setmerror] = useState(null);
+    // const [merror, setmerror] = useState(null);
     const [images, setImages] = useState([]);
     const [imagesPreview, setImagesPreview] = useState([]);
   

@@ -1,10 +1,10 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+
 import "./VerificationMessage.css"
 import {useSelector} from "react-redux"
 const VerificationMessage = () => {
 //   const { email } = useParams();
-  const {user,loading}=useSelector(state=>state.user);
+  const {user}=useSelector(state=>state.user);
 
   const handleOpenEmail = () => {
     // Open the user's email client with the verification email

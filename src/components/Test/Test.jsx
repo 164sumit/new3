@@ -1,13 +1,13 @@
 import React from 'react'
 import { login } from '../../actions/userAction';
 import {useDispatch,useSelector} from "react-redux"
-import {useEffect,useState} from "react"
+import {useEffect} from "react"
 
 
 
 function Test() {
     const dispatch=useDispatch();
-    const [first, setfirst] = useState(1)
+    // const [first, setfirst] = useState(1)
     const {isAuthentication,error}=useSelector(state=>state.user)
     function  hendelclick(){
      dispatch(login("164sumit20@gmail.com","12345678"));
@@ -31,7 +31,7 @@ function Test() {
           
         
           
-        }, [isAuthentication,first,error])
+        }, [isAuthentication,error])
         
     
     
@@ -43,7 +43,7 @@ function Test() {
         <h1>Test</h1>
         <h1>Test</h1>
         <h1>Test</h1>
-        <h1>{first}</h1>
+        <h1>tjjrk</h1>
          <button onClick={hendelclick}>logincorrect</button>
          <button onClick={hendelclickfal}>loginfalse</button>
  

@@ -6,7 +6,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { BiLockOpen } from "react-icons/bi";
 import { BiFace } from "react-icons/bi";
 import { toast } from "react-toastify"
-import { useNavigate,useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 import { useDispatch, useSelector } from "react-redux";
 import { clearErrors, login, register } from "../../../actions/userAction";

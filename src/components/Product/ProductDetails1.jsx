@@ -1,6 +1,6 @@
 import styles from "./ProductDetails.module.scss";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect} from "react";
 import { Link, useParams } from "react-router-dom";
 
 // import spinnerImg from "../../../assets/spinner.jpg";
@@ -19,7 +19,7 @@ const ProductDetails1 = () => {
     const { id } = useParams();
 
     const dispatch = useDispatch();
-    const { product, loading, error } = useSelector(
+    const { product, error } = useSelector(
         (state) => state.productDetails
     );
     useEffect(() => {

@@ -32,7 +32,7 @@ import FloatingPlusButton from './components/FloatingPlusButton/FloatingPlusButt
 
 
 import Test1 from "./components/FilterBox/Test1"
-import NewHeader from './components/layout/NewH/NewHeader';
+
 import ResponsiveAppBar from './components/layout/ResponsiveAppBar/ResponsiveAppBar';
 import { StyledEngineProvider } from '@mui/material/styles';
 import NotFound from './components/layout/NotFoundPage/NotFound';
@@ -44,7 +44,7 @@ import Verify from './components/User/Verify/Verify';
 
 
 function App() {
-  const {isAuthentication,user,loading}=useSelector(state=>state.user);
+  const {isAuthentication}=useSelector(state=>state.user);
   useEffect(() => {
     WebFont.load({
       google: {

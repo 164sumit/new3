@@ -6,15 +6,14 @@ import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
-import Badge from '@mui/material/Badge';
+
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Button from '@mui/material/Button';
 import SearchIcon from '@mui/icons-material/Search';
 import AccountCircle from '@mui/icons-material/AccountCircle';
-import MailIcon from '@mui/icons-material/Mail';
-import NotificationsIcon from '@mui/icons-material/Notifications';
+
 import MoreIcon from '@mui/icons-material/MoreVert';
 import { Link ,useNavigate} from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
@@ -70,13 +69,13 @@ export default function PrimarySearchAppBar() {
   const navigate=useNavigate()
   const [keyword, setkeyword] = React.useState("");
   const [anchorEl, setAnchorEl] = React.useState(null);
-  const [anchorEl1, setAnchorEl1] = React.useState(null);
+  // const [anchorEl1, setAnchorEl1] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+  // const [anchorElUser, setAnchorElUser] = React.useState(null);
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
-  const { error, loading, isAuthentication, user } = useSelector(
+  const {  isAuthentication, user } = useSelector(
     (state) => state.user
   );
   function hendellogout(){
@@ -118,20 +117,17 @@ export default function PrimarySearchAppBar() {
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
+  // 
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
+ 
   const handleProfileMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
   };
+
 
   const handleMobileMenuClose = () => {
     setMobileMoreAnchorEl(null);

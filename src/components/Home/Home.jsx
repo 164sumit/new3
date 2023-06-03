@@ -3,7 +3,7 @@ import {CgMouse} from "react-icons/cg"
 import ProductCard from "./ProductCard"
 import "./Home.css";
 import MetaData from '../layout/MetaData';
-import { getProduct, getProduct1 } from '../../actions/productAction';
+import {  getProduct1 } from '../../actions/productAction';
 import {useSelector,useDispatch} from "react-redux"
 import Loader from '../layout/Loader/Loader';
 import {  toast } from 'react-toastify';
@@ -24,7 +24,7 @@ import { Link } from 'react-router-dom';
 
 function Home() {
   const dispatch = useDispatch();
-  const {products,loading,productsCount,filteredProductsCount,error}=useSelector((state)=>state.product)
+  const {products,loading,productsCount,error}=useSelector((state)=>state.product)
   console.log(products);
   useEffect(() => {
     if(error){

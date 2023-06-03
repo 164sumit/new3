@@ -81,8 +81,8 @@ const ProductDetails = () => {
                                 
                             // />
                             <div className="slider">
-                            
-                            <img className="slider-image" src={product.images[currentIndex].url}></img>
+                            <img  className="slider-image" src={product.images[currentIndex].url} alt="productimage">
+                            </img>
                             <button className="arrow previous" onClick={handlePrevious} >
           &#8249;
         </button>

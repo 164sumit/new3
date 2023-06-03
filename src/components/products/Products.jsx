@@ -6,7 +6,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import { useDispatch, useSelector } from 'react-redux';
 import { getProduct } from '../../actions/productAction';
 import ProductCard from '../Home/ProductCard';
-import SearchBox from '../Searchbox/SearchBox';
+
 import { useLocation, useParams } from "react-router-dom";
 import Pagination from '../Pagenation/Pagination';
 import MetaData from '../layout/MetaData';
@@ -25,7 +25,8 @@ const Test = () => {
     sortByDate: ""
   });
 
-  const { products, loading, error, productsCount, filteredProductsCount } = useSelector(state => state.product);
+
+  const { products,  filteredProductsCount } = useSelector(state => state.product);
 
   let totalPages = Math.ceil(filteredProductsCount / 8);
 
@@ -177,6 +178,7 @@ const Test = () => {
       </>
 
       <div  className={`app-container${isMobileDisplay ? ' mobile-display' : ''}`}>
+        {filters?<h1 style={{display:"none"}}>.</h1>:null}
         {/* {isMobileDisplay ? (
           <>
 

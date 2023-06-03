@@ -12,7 +12,7 @@ const ProductComponent = () => {
     const { id } = useParams();
 
 
-    const { product, loading, error } = useSelector(
+    const { product,  error } = useSelector(
         (state) => state.productDetails
     );
 

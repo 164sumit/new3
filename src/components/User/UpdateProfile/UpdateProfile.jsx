@@ -1,7 +1,6 @@
 import "./UpdateProfile.css"
 import {Fragment} from "react"
 import { AiOutlineMail } from "react-icons/ai";
-import { BiLockOpen } from "react-icons/bi";
 import { BiFace } from "react-icons/bi";
 import {useState,useEffect} from "react"
 import {useDispatch,useSelector} from "react-redux"

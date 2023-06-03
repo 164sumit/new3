@@ -111,7 +111,7 @@ const FilterBox = (props) => {
     };
 
     // props.setFilterVisible(false);
-  }, [minPrice, maxPrice, selectedCategory, sortBy, sortByDate, navigate]);
+  }, [minPrice, maxPrice, selectedCategory, sortBy, sortByDate,keyword,props, navigate]);
   useEffect(() => {
     // Get the query parameters from the current URL
     const queryParams = new URLSearchParams(location.search);

@@ -3,7 +3,7 @@ import "./ResetPassword.css"
 import {Fragment,useState,useEffect} from "react"
 import {useDispatch,useSelector} from "react-redux"
 import {toast} from "react-toastify"
-import {useNavigate,useParams,Navigate} from "react-router-dom"
+import {useNavigate,useParams} from "react-router-dom"
 import { clearErrors, resetPassword } from '../../../actions/userAction'
 import Loader from '../../layout/Loader/Loader'
 import MetaData from '../../layout/MetaData'

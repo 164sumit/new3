@@ -4,7 +4,7 @@ import { AiOutlineMail } from "react-icons/ai";
 
 import {Fragment,useEffect,useState} from "react"
 import {useDispatch,useSelector} from "react-redux"
-import {useNavigate} from "react-router-dom"
+
 import {toast} from "react-toastify"
 import Loader from '../../layout/Loader/Loader'
 import MetaData from '../../layout/MetaData'

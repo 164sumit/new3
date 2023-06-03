@@ -18,7 +18,7 @@ const Card = ({ images }) => {
   return (
     <div className="card" >
       <div className="slider">
-        <img className="slide" onClick={onClick} src={images[currentIndex].url} alt="Slider Image" />
+        <img className="slide"  src={images[currentIndex].url} alt="productpng" />
         <button className="arrow previous" onClick={handlePrevious}>
           &#8249;
         </button>
@@ -26,11 +26,6 @@ const Card = ({ images }) => {
           &#8250;
         </button>
       </div>
-      {/* <div className="details" onClick={onClick}>
-        {/* <h2 className="name">{name}</h2>
-        <p className="price">{price}</p>
-        <p className="day">{day}</p> */}
-      </div> */}
     </div>
   );
 };

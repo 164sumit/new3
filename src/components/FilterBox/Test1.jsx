@@ -24,7 +24,7 @@ const Test = () => {
   });
   const [filterContainerVisible, setFilterContainerVisible] = useState(true);
 
-  const { products, loading, error, productsCount, filteredProductsCount } = useSelector((state) => state.product);
+  const { products,  filteredProductsCount } = useSelector((state) => state.product);
 
   let totalPages = Math.ceil(filteredProductsCount / 8);
 
