@@ -168,10 +168,10 @@ const Test = () => {
 
         </div>
         <div className="container2" >
-          {products.map((product) => (
+          {products?products.map((product) => (
             <ProductCard key={product._id} product={product} />
 
-          ))}
+          )):null}
 
         </div>
 

@@ -66,10 +66,10 @@ function Home() {
             <h2 id="container" className="homeHeading"> Total Products: {productsCount}  </h2>
   
             <div className="container2" >
-              {products.map((product)=>(
+              {products?products.map((product)=>(
                 <ProductCard key={product._id} product={product} />
   
-              ))}
+              )):null}
               
             </div>
             
