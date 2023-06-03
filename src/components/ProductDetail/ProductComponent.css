@@ -1,0 +1,21 @@
+.productContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .imageSliderContainer {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .productDetailsContainer {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .productContainer {
+      flex-direction: column;
+    }
+  }
+  

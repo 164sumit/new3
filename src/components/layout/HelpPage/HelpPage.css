@@ -1,0 +1,84 @@
+.help-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+  }
+  
+  h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    margin-left: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .icon:hover {
+    transform: rotate(180deg);
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+/* Previous CSS styles */
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  
+  /* Previous CSS styles */
+
+.help-item {
+    margin-top: 10px;
+  }
+  
+  .help-item h4 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .help-item p {
+    font-size: 14px;
+  }
+  
+  .desktop-image {
+    display: block; /* Display only on desktop */
+    width: 90%;
+    margin: 10px auto;
+  }
+  
+  .mobile-image {
+    display: none; /* Hide on desktop */
+    width: 90%;
+    margin: 10px auto;
+  }
+  
+  /* Media query for mobile view */
+  @media (max-width: 767px) {
+    .desktop-image {
+      display: none; /* Hide on mobile */
+    }
+  
+    .mobile-image {
+      display: block; /* Display only on mobile */
+    }
+  }
+  

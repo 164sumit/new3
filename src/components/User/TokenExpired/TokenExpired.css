@@ -1,0 +1,45 @@
+.token-expired-container {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 400px;
+  }
+  
+  .cross-logo {
+    font-size: 120px;
+    color: red;
+    margin-bottom: 20px;
+  }
+  
+  .token-expired-heading {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .token-expired-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .register-button,
+  .home-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .register-button {
+    margin-right: 10px;
+  }
+  
+  .register-button:hover,
+  .home-button:hover {
+    background-color: #0056b3;
+  }
+  
