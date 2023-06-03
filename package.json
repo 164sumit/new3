@@ -45,7 +45,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:4001",
+  "proxy": "https://campusdiary.onrender.com/",
   "eslintConfig": {
     "extends": [
       "react-app",
